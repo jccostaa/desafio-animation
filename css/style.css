@@ -1,0 +1,159 @@
+*{
+    margin :0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  margin-bottom: 0;
+  justify-content: space-around;
+  background-color: black;
+  background-repeat: no-repeat;
+  animation: trocar 15s infinite;
+  }
+#logo{
+  position: absolute;
+  top:100px;
+  left: 100px;
+  width: 580px;
+  height: 200px;
+  animation: text-focus-in-out 4s infinite;
+}
+.lancamento{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 100px;
+  top: 300px;
+  width: 580px;
+  height: 200px;
+  z-index: 9999;
+  color: rgb(208, 226, 208);
+  
+}
+h1,span{
+  font-family: "Avengers";
+  font-size: 1cm;
+}
+.info{
+  
+  color: #000000;
+  opacity: 0;
+  animation: slide-in 2s ease-in-out forwards;
+  text-shadow: -1px -1px 0 rgb(251, 255, 246), 1px -1px 0 rgb(122 122 122 / 75%), -1px 1px 0 rgb(56, 58, 56), 1px 1px 0 rgb(250, 249, 247);
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(1000%);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+}
+
+@keyframes trocar {
+ 
+  0% {
+    background-image: url("/img/capitao-fundo-preto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  12.5% {
+    background-image: url("/img/gavic3a3o-arqueiro-mais-uma-sc3a9rie-confirmada-para-disney.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  25% {
+    background-image: url("/img/iron-man.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  37.5% {
+    background-image: url("/img/spider-man.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  50% {
+    background-image: url("/img/scarlet-fundo-preto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+  62.5% {
+    background-image: url("/img/hulk2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  75% {
+    background-image: url("/img/fury-fundo-preto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image: url("/img/thanos-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+@keyframes text-focus-in-out {
+  0% {
+    filter: blur(0px);
+    opacity: 0.09;
+  }
+  10% {
+    filter: blur(0px);
+    opacity: 0.2;
+  }
+  20% {
+    filter: blur(0px);
+    opacity: 0.4;
+  }
+  30% {
+    filter: blur(0px); 
+    opacity: 0.6;
+  }
+  40% {
+  filter: blur(0px);
+    opacity: 0.8;
+  }
+  50% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  60% {
+    filter: blur(0px);
+    opacity: 0.8;
+  }
+  70% {
+    filter: blur(0px);
+    opacity: 0.6;
+  }
+  80% {
+    filter: blur(0px);
+    opacity: 0.4;
+  }
+  90% {
+    filter: blur(0px);
+    opacity: 0.2;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 0.09;
+  }
+}
+
+
